@@ -10,7 +10,7 @@ install_PYTHON = \
 	Dish.py LanguageSelection.py StartWizard.py PiPSetup.py \
 	PluginBrowser.py MinuteInput.py Scart.py PVRState.py \
 	Console.py InputBox.py ChoiceBox.py SimpleSummary.py \
-	TimerSelection.py PictureInPicture.py TimeDateInput.py BhAddons.py BhBlue.py BpGreen.py BhDevice.py BhEI.py BhEpgPanel.py \
+	TimerSelection.py PictureInPicture.py TimeDateInput.py BhAddons.py BhBlue.py BhDevice.py BhEI.py BhEpgPanel.py \
 	SubtitleDisplay.py SubservicesQuickzap.py ParentalControlSetup.py NumericalTextInputHelpDialog.py BhEpgSearch.py BhFormat.py \
 	SleepTimerEdit.py Ipkg.py RdsDisplay.py Globals.py BhGreen.py BhHdd.py BhInadyn.py BhInfo.py BhNet.py BhRed.py \
 	SessionGlobals.py LocationBox.py WizardLanguage.py TaskView.py Rc.py VirtualKeyBoard.py BhInterface.py BhScript.py BhSettings.py \
