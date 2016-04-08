@@ -6,8 +6,6 @@
 #include <lib/gdi/picload.h>
 
 extern "C" {
-#define HAVE_BOOLEAN
-#define boolean int
 #include <jpeglib.h>
 #include <gif_lib.h>
 }
@@ -477,8 +475,9 @@ static void gif_load(Cfilepara* filepara, bool forceRGB = false)
 	ColorMapObject *cmap;
 	int cmaps;
 	int extcode;
+	int ErrorCode;
 
-	gft = DGifOpenFileName(filepara->file);
+	gft = DGifOpenFileName(filepara->file, &ErrorCode);
 	if (gft == NULL)
 		return;
 	do
@@ -568,11 +567,11 @@ static void gif_load(Cfilepara* filepara, bool forceRGB = false)
 	}
 	while (rt != TERMINATE_RECORD_TYPE);
 
-	DGifCloseFile(gft);
+	DGifCloseFile(gft, &ErrorCode);
 	return;
 ERROR_R:
 	eDebug("[ePicLoad] <Error gif>");
-	DGifCloseFile(gft);
+	DGifCloseFile(gft, &ErrorCode);
 }
 
 //---------------------------------------------------------------------------------------------
