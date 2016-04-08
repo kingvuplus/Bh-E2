@@ -2,7 +2,6 @@ SUBDIRS = countries fonts extensions keymaps rc_models hw_info
 
 dist_pkgdata_DATA = \
 	encoding.conf \
-	keymap.xml \
 	radio.mvi \
 	black.mvi \
 	rcpositions.xml \
